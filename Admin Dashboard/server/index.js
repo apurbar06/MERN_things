@@ -38,3 +38,10 @@ mongoose
     app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
   })
   .catch((error) => console.log(`${error} did not connect`));
+
+
+
+
+
+//   26 min
+// https://www.youtube.com/watch?v=0cPCMIuDk2I
