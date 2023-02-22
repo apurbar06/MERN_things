@@ -45,3 +45,24 @@ app.post('/add-phone', async(req,res) => {
         })
     }
 })
+
+
+
+
+// Create Get Route
+app.get('/get-phone', async (req,res) => {
+    const phoneNumbers = await PhoneBook.find({})
+    try{
+        res.status(200).json({
+            status : 'Success',
+            data : {
+                phoneNumbers
+            }
+        })
+    }catch(err){
+        res.status(500).json({
+            status: 'Failed',
+            message : err
+        })
+    }
+})
