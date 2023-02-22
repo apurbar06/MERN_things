@@ -1,3 +1,4 @@
+// Create Node Server
 const express = require('express')
 const cors = require('cors')
 const app = express()
@@ -10,6 +11,7 @@ app.listen(PORT, () => {
 })
 
 
+// Connect MongoDB Database
 const mongoose = require('mongoose')
 const DB = 'mongodb+srv://apurba:mongodb@cluster0.bcmffzk.mongodb.net/?retryWrites=true&w=majority'
 
