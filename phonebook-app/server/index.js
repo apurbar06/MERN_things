@@ -87,3 +87,22 @@ app.patch('/update-phone/:id', async (req,res) => {
         console.log(err)
     }
 })
+
+
+
+// Create Delete Route
+app.delete('/delete-phone/:id', async(req,res) => {
+    await PhoneBook.findByIdAndDelete(req.params.id)
+    
+    try{
+      res.status(204).json({
+          status : 'Success',
+          data : {}
+      })
+    }catch(err){
+        res.status(500).json({
+            status: 'Failed',
+            message : err
+        })
+    }
+})
