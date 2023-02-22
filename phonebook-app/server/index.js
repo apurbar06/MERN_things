@@ -8,3 +8,14 @@ const PORT = 8080
 app.listen(PORT, () => {
     console.log(`Server is running on PORT ${PORT}...`)
 })
+
+
+const mongoose = require('mongoose')
+const DB = 'mongodb+srv://apurba:mongodb@cluster0.bcmffzk.mongodb.net/?retryWrites=true&w=majority'
+
+mongoose.connect(DB, {
+    useNewUrlParser: true,
+     useUnifiedTopology: true,
+}).then(() =>{
+    console.log('Database connected..')
+})
