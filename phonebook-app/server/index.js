@@ -66,3 +66,24 @@ app.get('/get-phone', async (req,res) => {
         })
     }
 })
+
+
+
+
+// Create Update Route
+app.patch('/update-phone/:id', async (req,res) => {
+    const updatedPhone = await PhoneBook.findByIdAndUpdate(req.params.id,req.body,{
+        new : true,
+        runValidators : true
+      })
+    try{
+        res.status(200).json({
+            status : 'Success',
+            data : {
+              updatedPhone
+            }
+          })
+    }catch(err){
+        console.log(err)
+    }
+})
