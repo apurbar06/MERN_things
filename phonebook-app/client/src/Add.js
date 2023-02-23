@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Axios from 'axios'
-import './App.css';
+import './style.css';
 
-function App() {
+
+function Add() {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState(0)
 
@@ -22,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Add;
