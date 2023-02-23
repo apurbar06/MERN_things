@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Axios from 'axios'
 import './App.css';
 
 function App() {
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState(0)
+
+  const addNewNumber = () => {
+    Axios.post('http://localhost:8080/add-phone',{name,phone})
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container">
+      <label htmlFor="">Name: </label>
+      <input type="text" onChange={(e) => {setName(e.target.value)}}/><br/><br/>
+      <label htmlFor="">Phone: </label>
+      <input type="number" onChange={(e) => {setPhone(e.target.value)}}/><br/><br/>
+
+      <button onClick={addNewNumber}>Add New Number</button>
+    </div> 
   );
 }
 
