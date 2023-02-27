@@ -18,9 +18,12 @@ function Add() {
           <li>
             <Link to="/get">Get Numbers</Link>
           </li>
+          <li>
+            <Link to="/update">Update Numbers</Link>
+          </li>
         </ul>
       </nav>
-      
+
       <label htmlFor="">Name: </label>
       <input
         type="text"

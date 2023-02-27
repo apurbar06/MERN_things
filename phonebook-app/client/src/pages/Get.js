@@ -18,6 +18,9 @@ function Get() {
           <li>
             <Link to="/">Add Numbers</Link>
           </li>
+          <li>
+            <Link to="/update">Update Numbers</Link>
+          </li>
         </ul>
       </nav>
 
