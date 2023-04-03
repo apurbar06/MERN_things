@@ -14,7 +14,9 @@ function Update() {
   }, []);
 
   const updatePhone = (id) => {
-    Axios.put("http://localhost:8080/update-phone", { id, newPhone });
+    Axios.put(`http://localhost:8080/update-phone/${id}`, {
+      phone: newPhone
+    });
   };
 
   const deletePhone = (id) => {
