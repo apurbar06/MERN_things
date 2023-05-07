@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "apurba",
+        "MONGO_PASSWORD": "mongodb",
+        "MONGO_DB": "test.todo_mern"
+    }
+}
