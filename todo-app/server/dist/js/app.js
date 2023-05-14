@@ -12,9 +12,8 @@ const PORT = process.env.PORT || 4000;
 app.use((0, cors_1.default)());
 app.use(routes_1.default);
 const mongoose = require('mongoose');
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.bcmffzk.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
+const uri = 'mongodb+srv://apurba:mongodb@cluster0.bcmffzk.mongodb.net/?retryWrites=true&w=majority';
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
-mongoose.set("useFindAndModify", false);
 mongoose
     .connect(uri, options)
     .then(() => app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`)))
