@@ -31,3 +31,33 @@ export const addTodo = async (
     throw error;
   }
 };
+
+export const updateTodo = async (
+  todo: ITodo
+): Promise<AxiosResponse<ApiDataType>> => {
+  try {
+    const todoUpdate: Pick<ITodo, "status"> = {
+      status: true,
+    };
+    const updateTodo: AxiosResponse<ApiDataType> = await axios.put(
+      `${baseUrl}/edit-todo/${todo._id}`,
+      todoUpdate
+    );
+    return updateTodo;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const deleteTodo = async (
+  _id: string
+): Promise<AxiosResponse<ApiDataType>> => {
+  try {
+    const deleteTodo: AxiosResponse<ApiDataType> = await axios.delete(
+      `${baseUrl}/delete-todo/${_id}`
+    );
+    return deleteTodo;
+  } catch (error) {
+    throw error;
+  }
+};
