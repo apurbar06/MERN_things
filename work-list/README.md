@@ -1,20 +1,21 @@
-<h1 align="center">Notes App with React and LocalStorage</h1>
+<h1 align="center">Work List using MERN</h1>
 
 ## Demo
-https://note-app-apurbar06.vercel.app/
 <p align="center">
   <img src="demo.png" width="800">
 </p>
 
 
 ## About
-This is a simple web application built with React that allows users to create and save notes to LocalStorage.
+This is a simple application built with MERN that allows users to create, save, mark as complete and delete tasks.
 
 
 ## Features
-- Create new notes with content
-- Delete existing notes
-- Persist notes to LocalStorage, so they are saved even when the browser is closed
+- Create new task with description
+- Crossbar over the task that is completed
+- React and type script is used for the front-end
+- Node is used for the backend
+- MongoDB is for database
 
 
 ## Getting started
@@ -23,7 +24,7 @@ To get started with the app, you can follow these steps:
 # Clone this project
 $ git clone https://github.com/apurbar06/React_things
 # Access
-$ cd note_app
+$ cd work-list
 # Install the necessary dependencies
 $ npm install
 # Start the development server
