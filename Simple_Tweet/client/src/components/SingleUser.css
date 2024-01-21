@@ -1,0 +1,28 @@
+.user-list-content.list-group-item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.user-list-text-container {
+    display: flex;
+}
+
+.user-list-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-list-avathar {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.following-text {
+    margin: 30px;
+}

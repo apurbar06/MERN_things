@@ -1,0 +1,17 @@
+.user-tabs {
+    margin-bottom: 50px !important;
+}
+
+.nav.nav-tabs {
+    border-bottom: 0px;
+}
+
+.nav-tabs .nav-link.active {
+    border: 0;
+    border-top: 2px solid;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}

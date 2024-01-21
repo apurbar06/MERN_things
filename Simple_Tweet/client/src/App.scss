@@ -1,0 +1,36 @@
+// Import Bootstrap and its default variables
+
+// change the theme
+$theme-colors: (
+  "primary":#ef728b,
+  "secondary": white
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,500;1,577&display=swap');
+
+
+body {
+  font-family: 'Muli', sans-serif;
+  color: #6b6b6b;
+}
+.btn-primary{
+    color: white;
+}
+
+.btn-secondary{
+  border: 1px solid black;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.6rem 2rem;
+  box-shadow: 0px 4px 5px #8080803b;
+
+}
+
+.form-control {
+  height: calc(2.5em + 0.75rem + 2px);
+  background-color: #f9f9f9;
+  border: 0px;
+}

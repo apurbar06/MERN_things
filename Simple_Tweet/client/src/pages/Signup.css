@@ -1,0 +1,12 @@
+.main-title {
+    margin: 90px 0px 40px 0px;
+}
+
+.form-bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-loading-container {
+    margin-top: 15px;
+}

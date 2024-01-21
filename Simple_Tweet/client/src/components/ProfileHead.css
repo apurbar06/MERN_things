@@ -1,0 +1,28 @@
+.user-list-content {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-list-text-container {
+    display: flex;
+    margin: 25px;
+}
+
+.user-list-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-head-avathar {
+    margin: 0px;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+
+.user-details-item {
+    margin-right: 15px;
+}
