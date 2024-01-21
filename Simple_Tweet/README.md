@@ -2,6 +2,10 @@
 
 This project is a simple Twitter clone built with a MERN stack (MongoDB, Express, React, Node.js).
 
+## Live
+https://tweetx-liard.vercel.app/
+
+
 ## Project Structure
 
 The project is divided into two main directories:
