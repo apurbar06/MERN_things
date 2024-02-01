@@ -66,4 +66,4 @@ Contributions are welcome. Please open a pull request with your changes.
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
